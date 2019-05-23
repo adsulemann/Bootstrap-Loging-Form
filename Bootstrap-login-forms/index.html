@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      
+  
+
+<div class="container-fluid  mt-5 ">
+ <div class="row justify-content-center ">
+   <div class="col-8  col-sm-7 col-md-6  col-lg-7 border border-info shadow-lg p-3 mb-5 rounded bg-light">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control required" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password required">
+        </div>
+
+
+<!-- the text area -->
+
+        <form class="was-validated">
+            <div class="mb-4">
+              <label for="validationTextarea">Textarea</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Bio" required></textarea>
+                Please enter a message in the textarea.
+            </div>
+          
+            <div class="custom-control custom-checkbox mb-3">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+              <div class="invalid-feedback">Example invalid feedback text</div>
+            </div>
+          
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+              <div class="invalid-feedback">More example invalid feedback text</div>
+            </div>
+
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+              </div>
+
+              <label for="customRange1">Example range</label>
+              <input type="range" class="custom-range" id="customRange1">
+          
+            <div class="form-group">
+              <select class="custom-select" required>
+                <option value="">Language</option>
+                <option value="1">English</option>
+                <option value="2">German</option>
+                <option value="3">Italian</option>
+              </select>
+              <div class="invalid-feedback">Example invalid custom select feedback</div>
+            </div>
+          
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+          </form>
+
+
+              
+        <br>
+        <button type="submit" class="btn btn-outline-primary  rounded bg-success btn-block   shadow p-3 mb-5 bg-white rounded">Submit</button>
+      </form>
+
+
+
+      <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal" data-whatever="@DCI">DCI's Feedback</button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ </div>
+</div>
+
+
+<br>
+
+
+<!--  Responsive inline Form -->
+
+<div class="container">
+  <form class="form-inline">
+    <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-2   m-2  ml-5">
+      <input name="name" placeholder="User Name" class="form-control" required>
+    </div>
+
+    <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-2  m-2  ml-5">
+      <input name="password" type="password" placeholder="Password" class="form-control" step="any" required>
+    </div>
+  
+    <div class="form-group col-xs-12 col-sm-6 col-md-4 col-lg-2 m-2 ml-5">
+      <input name="email" type="email" placeholder="E-mail" class="form-control" step="any" required>
+    </div>
+ 
+
+    <button type="submit" class="btn  form-group col-xs-12 col-sm-5 col-md-3 col-lg-2 btn-outline-primary  rounded bg-success m-2 ml-5 rounded text-white">Submit</button>
+   </form>
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
